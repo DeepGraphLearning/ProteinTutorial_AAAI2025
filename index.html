@@ -137,57 +137,121 @@
 <h2 id="outline">Outline</h2>
 
 <ul>
-  <li>Part I: 80 min
+  <li>Part I: Introduction [30 min, Wengong]
     <ul>
-      <li>Drug Discovery Overview [10 min, Feixiong]</li>
-      <li>Molecule Properties Prediction [20 min, Jian]
-        <ul>
-          <li>Supervised [MPNN <a class="citation" href="#gilmer2017neural">(Gilmer et al., 2017)</a>]</li>
-          <li>Self-supervised [ContextPred <a class="citation" href="#hu2019strategies">(Hu et al., 2019)</a>, InfoGraph <a class="citation" href="#sun2019infograph">(Sun et al., 2020)</a>]</li>
-          <li>Semi-supervised [InfoGraph <a class="citation" href="#sun2019infograph">(Sun et al., 2020)</a>]</li>
-        </ul>
-      </li>
-      <li>De novo Molecule Generation and Optimization [20 min, Jian]
-        <ul>
-          <li>Variational autoencoder-based approach [JTVAE <a class="citation" href="#jin2018junction">(Jin et al., 2018)</a>]</li>
-          <li>Autoregressive methods [GCPN <a class="citation" href="#you2018graph">(You et al., 2018)</a>]</li>
-          <li>Normalizing Flow-based approaches [GraphAF <a class="citation" href="#shi2020graphaf">(Shi et al., 2020)</a>, MoFlow <a class="citation" href="#zang2020moflow">(Zang &amp; Wang, 2020)</a>]</li>
-        </ul>
-      </li>
-      <li>Reaction Prediction and Retrosynthesis [5 min, Jian]</li>
-      <li>Molecular Conformation Prediction [20 min, Jian]
-        <ul>
-          <li>CGCF [<a class="citation" href="#xu2021learning">(Xu et al., 2021)</a>]</li>
-          <li>ConfVAE [<a class="citation" href="#xu2021end">(Xu et al., 2021)</a>]</li>
-          <li>ConfGF [<a class="citation" href="#shi2021learning">(Shi et al., 2021)</a>]</li>
-        </ul>
-      </li>
-      <li>Open Source Platform TorchDrug [5 min, Jian]</li>
+      <li>Protein 101: Understanding and Modeling</li>
+      <li>Learning on Protein Data</li>
+      <li>Methodology Overview</li>
+      <li><strong>@Wengong: TBA</strong></li>
     </ul>
   </li>
-  <li>Break: 10 min</li>
-  <li>Part II: 65 min
+  <li>Part II: Protein Representation Learning [60 min, Zuobai]
     <ul>
-      <li>Multiomics and Clinical Data-based Drug Repurposing [30 min, Feixiong]
+      <li>Sequence Representation Learning
         <ul>
-          <li>Network-based approach [<a class="citation" href="#cheng2018network">(Cheng et al., 2018)</a>]</li>
-          <li>Graph Neural Network-based approach [<a class="citation" href="#gysi2020network">(Gysi et al., 2020)</a>]</li>
-          <li>Case Study on COVID-19 [<a class="citation" href="#zhou2020networkb">(Zhou et al., 2020)</a>, <a class="citation" href="#gysi2020network">(Gysi et al., 2020)</a>]</li>
+          <li>TAPE [<a class="citation" href="#rao2019tape">(Rao et al., 2019)</a>]</li>
+          <li>ProtTrans [<a class="citation" href="#elnaggar2021prottrans">(Elnaggar et al., 2021)</a>]</li>
+          <li>ESM-1 [<a class="citation" href="#rives2021esm">(Rives et al., 2021)</a>], ESM-2 [<a class="citation" href="#lin2023esm2">(Lin et al., 2023)</a>]</li>
         </ul>
       </li>
-      <li>Real World Data and Real World Evidence [30 min, Fei]
+      <li>Structure Representation Learning
         <ul>
-          <li>Treatment effectiveness estimation</li>
-          <li>Pharmacovigilance and safety</li>
-          <li>Eligibility criteria design</li>
+          <li>Geometric Deep Learning</li>
+          <li>Protein Structure Encoder
+            <ul>
+              <li>EGNN [<a class="citation" href="#satorras2021egnn">(Satorras et al., 2021)</a>]</li>
+              <li>GVP [<a class="citation" href="#jing2021gvp">(Jing et al., 2021)</a>]</li> 
+              <li>GearNet [<a class="citation" href="#zhang2023gearnet">(Zhang et al., 2023)</a>]</li>
+              <li>CDConv [<a class="citation" href="#fan2023cdconv">(Fan et al., 2023)</a>]</li>
+            </ul>
+          </li>
+          <li>Structure Pre-training Algorithm
+            <ul>
+              <li>GearNet [<a class="citation" href="#zhang2023gearnet">(Zhang et al., 2023)</a>]</li>
+              <li>SiamDiff [<a class="citation" href="#zhang2023siamdiff">(Zhang et al., 2023)</a>]</li>
+            </ul>
+          </li>
         </ul>
       </li>
-      <li>Future Work [5 min]</li>
+      <li>Multi-Modality Representation Learning
+        <ul>
+          <li>ESM-GearNet [<a class="citation" href="#zhang2023esmgearnet">(Zhang et al., 2023)</a>]</li>
+          <li>SaProt [<a class="citation" href="#su2023saprot">(Su et al., 2023)</a>], DPLM-2 [<a class="citation" href="#wang2024dplm2">(Wang et al., 2024)</a>]</li>
+          <li>ProtST [<a class="citation" href="#xu2023protst">(Xu et al., 2023)</a>]</li>
+          <li>ESM3 [<a class="citation" href="#hayes2024esm3">(Hayes et al., 2024)</a>]</li>
+        </ul>
+      </li>
+      <li>Open Source Platform TorchProtein</li>
     </ul>
   </li>
-  <li>Part III: 20 min
+  <li>Break: 15 min</li>
+  <li>Part III: Protein Structure and Dynamics Prediction [60 min, Jiarui]
     <ul>
-      <li>QA [20 min]</li>
+      <li>Protein Folding and Side-Chain Packing
+        <ul>
+          <li>AlphaFold 2, RosettaFold [], ESMFold []</li>
+          <li>DiffPack []</li>
+        </ul>
+      </li>
+      <li>Protein Complex Docking
+        <ul>
+          <li>DiffDock []</li>
+          <li>AlphaFold2-Multimer []</li>
+          <li>AlphaFold3 []</li>
+        </ul>
+      </li>
+      <li>Protein Conformation Sampling
+        <ul>
+          <li>Boltzman Generator []</li>
+          <li>EigenFold []</li>
+          <li>Str2Str []</li>
+          <li>AlphaFlow []</li>
+          <li>ConfDiff []</li>
+        </ul>
+      </li>
+      <li>Neural Protein MD Simulators
+        <ul>
+          <li>CGNet []</li>
+          <li>ITO []</li>
+          <li>TimeWarp []</li>
+        </ul>
+      </li>
+      <li><strong>@Jiarui: TBA</strong></li>
+    </ul>
+  </li>
+  <li>Part IV: Protein Design [60 min, Wengong]
+    <ul>
+      <li>Sequence Design
+        <ul>
+          <li>ProGen [], ProGen-2 []</li>
+          <li>ESM-IF [], ProteinMPNN []</li>
+        </ul>
+      </li>
+      <li>Structure Design
+        <ul>
+          <li>FrameDiff [], FrameFlow []</li>
+          <li>Genie [], Genie2 []</li>
+          <li>Chroma []</li>
+          <li>RFDiffusion []</li>
+          <li>FoldFlow [], FoldFlow-2 []</li>
+        </ul>
+      </li>
+      <li>Sequence-Structure Co-Design
+        <ul>
+          <li>ProtSeed []</li>
+          <li>ProteinGenerator []</li>
+          <li>MultiFlow []</li>
+          <li>Protpardelle []</li>
+          <li>DPLM-2 []</li>
+        </ul>
+      </li>
+      <li>Antibody Design [RefineGNN (Jin et al., 2021)]</li>
+      <li><strong>@Wengong: TBA</strong></li>
+    </ul>
+  </li>
+  <li>Part V: 15 min
+    <ul>
+      <li>QA [15 min]</li>
     </ul>
   </li>
 </ul>
@@ -240,7 +304,26 @@
 </ul>
 
 <h2 id="references">References</h2>
-<ol class="bibliography"><li><span id="sun2019infograph">Sun, F.-Y., Hoffmann, J., Verma, V., &amp; Tang, J. (2020). Infograph: Unsupervised and semi-supervised graph-level representation learning via mutual information maximization. <i>ICLR</i>.</span></li>
+<ol class="bibliography">
+<li><span id="rao2019tape">Rao, Roshan, et al. (2019). Evaluating protein transfer learning with TAPE. <i>NeuIPS</i>.</span></li>
+<li><span id="elnaggar2021prottrans">Elnaggar, Ahmed, et al. (2021) Prottrans: Toward understanding the language of life through self-supervised learning. <i>TPAMI</i>.</span></li>
+<li><span id="rives2021esm">Rives, Alexander, et al. (2021) Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences. <i>PNAS</i>.</span></li>
+<li><span id="lin2023esm2">Lin, Zeming, et al. (2023) Evolutionary-scale prediction of atomic-level protein structure with a language model. <i>Science</i>.</span></li>
+<li><span id="satorras2021egnn">Satorras, Vıctor Garcia, Emiel Hoogeboom, and Max Welling. (2021) E(n) equivariant graph neural networks. <i>ICML</i>.</span></li>
+<li><span id="jing2021gvp">Jing, Bowen, et al. (2021) Learning from protein structure with geometric vector perceptrons. <i>ICLR</i>.</span></li>
+<li><span id="zhang2023gearnet">Zhang, Zuobai, et al. (2023) Protein representation learning by geometric structure pretraining. <i>ICLR</i>.</span></li>
+<li><span id="fan2023cdconv">Fan, Hehe, et al. (2023) Continuous-discrete convolution for geometry-sequence modeling in proteins. <i>ICLR</i>.</span></li>
+<li><span id="zhang2023siamdiff">Zhang, Zuobai, et al. (2023) Pre-training protein encoder via siamese sequence-structure diffusion trajectory prediction. <i>NeurIPS</i>.</span></li>
+<li><span id="zhang2023esmgearnet">Zhang, Zuobai, et al. (2023) A systematic study of joint representation learning on protein sequences and structures. <i>ArXiv Preprint ArXiv:2303.06275</i>.</span></li>
+<li><span id="su2023saprot">Su, Jin, et al. (2024) Saprot: Protein language modeling with structure-aware vocabulary. <i>ICLR</i>.</span></li>
+<li><span id="wang2024dplm2">Wang, Xinyou, et al. (2025) DPLM-2: A multimodal diffusion protein language model. <i>ICLR</i>.</span></li>
+<li><span id="xu2023protst">Xu, Minghao, et al. (2023) Protst: Multi-modality learning of protein sequences and biomedical texts. <i>ICML</i>.</span></li>
+<li><span id="hayes2024esm3">Hayes, Thomas, et al. (2024) Simulating 500 million years of evolution with a language model. <i>Science</i>.</span></li>
+
+
+
+
+<!-- <li><span id="sun2019infograph">Sun, F.-Y., Hoffmann, J., Verma, V., &amp; Tang, J. (2020). Infograph: Unsupervised and semi-supervised graph-level representation learning via mutual information maximization. <i>ICLR</i>.</span></li>
 <li><span id="xu2021end">Xu, M., Wang, W., Luo, S., Shi, C., Bengio, Y., Gomez-Bombarelli, R., &amp; Tang, J. (2021). An End-to-End Framework for Molecular Conformation Generation via Bilevel Programming. <i>ArXiv Preprint ArXiv:2105.07246</i>.</span></li>
 <li><span id="shi2021learning">Shi, C., Luo, S., Xu, M., &amp; Tang, J. (2021). Learning gradient fields for molecular conformation generation. <i>ArXiv Preprint ArXiv:2105.03902</i>.</span></li>
 <li><span id="xu2021learning">Xu, M., Luo, S., Bengio, Y., Peng, J., &amp; Tang, J. (2021). Learning neural generative dynamics for molecular conformation generation. <i>ArXiv Preprint ArXiv:2102.10240</i>.</span></li>
@@ -266,7 +349,7 @@
 <li><span id="cheng2019network">Cheng, F., Kovács, I. A., &amp; Barabási, A.-L. (2019). Network-based prediction of drug combinations. <i>Nature Communications</i>, <i>10</i>(1), 1–11.</span></li>
 <li><span id="cheng2018network">Cheng, F., Desai, R. J., Handy, D. E., Wang, R., Schneeweiss, S., Barabási, A.-L., &amp; Loscalzo, J. (2018). Network-based approach to prediction and population-based validation of in silico drug repurposing. <i>Nature Communications</i>, <i>9</i>(1), 1–12.</span></li>
 <li><span id="gysi2020network">Gysi, D. M., Valle, Í. D., Zitnik, M., Ameli, A., Gan, X., Varol, O., Sanchez, H., Baron, R. M., Ghiassian, D., Loscalzo, J., &amp; others. (2020). Network medicine framework for identifying drug repurposing opportunities for covid-19. <i>ArXiv Preprint ArXiv:2004.07229</i>.</span></li>
-<li><span id="zhou2020networkb">Zhou, Y., Hou, Y., Shen, J., Kallianpur, A., Zein, J., Culver, D. A., Farha, S., Comhair, S., Fiocchi, C., Gack, M. U., &amp; others. (2020). A Network Medicine Approach to Investigation and Population-based Validation of Disease Manifestations and Drug Repurposing for COVID-19. <i>ChemRxiv</i>.</span></li></ol>
+<li><span id="zhou2020networkb">Zhou, Y., Hou, Y., Shen, J., Kallianpur, A., Zein, J., Culver, D. A., Farha, S., Comhair, S., Fiocchi, C., Gack, M. U., &amp; others. (2020). A Network Medicine Approach to Investigation and Population-based Validation of Disease Manifestations and Drug Repurposing for COVID-19. <i>ChemRxiv</i>.</span></li></ol> -->
 
     </div>
   </div>

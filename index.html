@@ -182,35 +182,28 @@
   <li><strong>Break: 15 min</strong></li>
   <li><strong>Part III: Protein Structure and Dynamics Prediction [60 min, Jiarui]</strong>
     <ul>
-      <li>Protein Folding and Side-Chain Packing
-        <ul>
-          <li>AlphaFold 2, RosettaFold [], ESMFold []</li>
-          <li>DiffPack []</li>
+  <li><strong>Protein Structure Prediction</strong>
+    <ul>
+      <li>Single-chain Folding: AlphaFold2 <a class="citation" href="#jumper2021alphafold">(Jumper et al., 2021)</a>, RoseTTAFold <a class="citation" href="#baek2021rosettafold">(Baek et al., 2021)</a>, OmegaFold <a class="citation" href="#wu2022omegafold">(Wu et al., 2022)</a>, ESMFold <a class="citation" href="#lin2023esmfold">(Lin et al., 2023)</a></li>
+      <li>Side-chain Packing: AttnPacker <a class="citation" href="#mcpartlon2023attnpacker">(McPartlon et al., 2023)</a>, DiffPack <a class="citation" href="#zhang2024diffpack">(Zhang et al., 2024)</a></li>
+      <li>Complex Prediction: AlphaFold-Multimer <a class="citation" href="#evans2021alphafoldmultimer">(Evans et al., 2021)</a>, RoseTTAFold-AA <a class="citation" href="#krishna2024rosettafoldaa">(Krishna et al., 2024)</a>, Umol <a class="citation" href="#bryant2024umol">(Bryant et al., 2024)</a>, AlphaFold3 <a class="citation" href="#abramson2024alphafold3">(Abramson et al., 2024)</a></li>
+    </ul>
+  </li>
+  <li><strong>Protein Conformation Sampling</strong>
+    <ul>
+      <li>Boltzmann Generators: <a class="citation" href="#noe2019boltzmann">Noé et al., 2019</a></li>
+      <li>Coarse-Graining Based: Two for One <a class="citation" href="#arts2023twoforone">(Arts et al., 2023)</a>, EigenFold <a class="citation" href="#jing2023eigenfold">(Jing et al., 2023)</a></li>
+      <li>Rigid-Frame Based: Str2Str <a class="citation" href="#lu2024str2str">(Lu et al., 2024)</a>, ConfDiff <a class="citation" href="#wang2024confdiff">(Wang et al., 2024)</a>, DiG <a class="citation" href="#zheng2024dig">(Zheng et al., 2024)</a>, AlphaFlow <a class="citation" href="#jing2024alphaflow">(Jing et al., 2024)</a>, BioEmu <a class="citation" href="#lewis2024bioemu">(Lewis et al., 2024)</a></li>
+      <li>Structure Language Models: ESMDiff <a class="citation" href="#lu2025esmdiff">(Lu et al., 2025)</a></li>
+    </ul>
+  </li>
+  <li><strong>MD Trajectory Emulation</strong>
+    <ul>
+      <li>Neural Simulator: CGMD <a class="citation" href="#fu2023cgmd">(Fu et al., 2023)</a></li>
+      <li>Conditional Transfer Operator: ITO <a class="citation" href="#schreiner2023ito">(Schreiner et al., 2023)</a>, TimeWarp <a class="citation" href="#klein2023timewarp">(Klein et al., 2023)</a></li>
+      <li>Trajectory Generator: MDGen <a class="citation" href="#jing2024mdgen">(Jing et al., 2024)</a></li>
         </ul>
       </li>
-      <li>Protein Complex Docking
-        <ul>
-          <li>DiffDock []</li>
-          <li>AlphaFold2-Multimer [], AlphaFold3 []</li>
-        </ul>
-      </li>
-      <li>Protein Conformation Sampling
-        <ul>
-          <li>Boltzman Generator []</li>
-          <li>EigenFold []</li>
-          <li>Str2Str []</li>
-          <li>AlphaFlow []</li>
-          <li>ConfDiff []</li>
-        </ul>
-      </li>
-      <li>Neural Protein MD Simulators
-        <ul>
-          <li>CGNet []</li>
-          <li>ITO []</li>
-          <li>TimeWarp []</li>
-        </ul>
-      </li>
-      <li><strong>@Jiarui: To be updated</strong></li>
     </ul>
   </li>
   <li><strong>Part IV: Protein Design [60 min, Wengong]</strong>
@@ -321,6 +314,31 @@
 <li><span id="shan2022bindddg">Shan, Sisi, et al. "Deep Learning-Guided Optimization of Human Antibody Against SARS-CoV-2 Variants with Broad Neutralization." <i>PNAS 2022</i>.</span></li>
 <li><span id="cai2024gearbind">Cai, Huiyu, et al. "Pretrainable Geometric Graph Neural Network for Antibody Affinity Maturation." <i>Nature Communications 2024</i>.</span></li>
 
+<li><span id="jumper2021alphafold">Jumper, John, et al. "Highly accurate protein structure prediction with AlphaFold." <i>Nature 2021</i>.</span></li>
+<li><span id="baek2021rosettafold">Baek, Minkyung, et al. "Accurate prediction of protein structures and interactions using a three-track neural network." <i>Science 2021</i>.</span></li>
+<li><span id="wu2022omegafold">Wu, Ruidong, et al. "High-resolution de novo structure prediction from primary sequence." <i>BioRxiv 2022</i>.</span></li>
+<li><span id="lin2023esmfold">Lin, Zeming, et al. "Evolutionary-scale prediction of atomic-level protein structure with a language model." <i>Science 2023</i>.</span></li>
+<li><span id="mcpartlon2023attnpacker">McPartlon, Matthew, et al. "An end-to-end deep learning method for protein side-chain packing and inverse folding." <i>PNAS 2023</i>.</span></li>
+<li><span id="zhang2024diffpack">Zhang, Yangtian, et al. "Diffpack: A torsional diffusion model for autoregressive protein side-chain packing." <i>NeurIPS 2024</i>.</span></li>
+<li><span id="evans2021alphafoldmultimer">Evans, Richard, et al. "Protein complex prediction with AlphaFold-Multimer." <i>bioRxiv 2021</i>.</span></li>
+<li><span id="krishna2024rosettafoldaa">Krishna, Rohith, et al. "Generalized biomolecular modeling and design with RoseTTAFold All-Atom." <i>Science 2024</i>.</span></li>
+<li><span id="bryant2024umol">Bryant, Patrick, et al. "Structure prediction of protein-ligand complexes from sequence information with Umol." <i>Nature Communications 2024</i>.</span></li>
+<li><span id="abramson2024alphafold3">Abramson, Josh, et al. "Accurate structure prediction of biomolecular interactions with AlphaFold 3." <i>Nature 2024</i>.</span></li>
+<li><span id="noe2019boltzmann">Noé, Frank, et al. "Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning." <i>Science 2019</i>.</span></li>
+<li><span id="arts2023twoforone">Arts, Marloes, et al. "Two for one: Diffusion models and force fields for coarse-grained molecular dynamics." <i>JCTC 2023</i>.</span></li>
+<li><span id="jing2023eigenfold">Jing, Bowen, et al. "Eigenfold: Generative protein structure prediction with diffusion models." <i>ICLR 2023 MLDD</i>.</span></li>
+<li><span id="lu2024str2str">Lu, Jiarui, et al. "Str2Str: A Score-based Framework for Zero-shot Protein Conformation Sampling." <i>The Twelfth International Conference on Learning Representations (ICLR 2024)</i>.</span></li>
+<li><span id="wang2024confdiff">Wang, Yan, et al. "Protein conformation generation via force-guided se (3) diffusion models." <i>The 41st International Conference on Machine Learning (ICML 2024)</i>.</span></li>
+<li><span id="zheng2024dig">Zheng, Shuxin, et al. "Predicting equilibrium distributions for molecular systems with deep learning." <i>Nature Machine Intelligence (2024): 1-10</i>.</span></li>
+<li><span id="jing2024alphaflow">Jing, Bowen, et al. "AlphaFold meets flow matching for generating protein ensembles." <i>The 41st International Conference on Machine Learning (ICML 2024)</i>.</span></li>
+<li><span id="lu2025esmdiff">Lu, Jiarui, et al. "Structure Language Models for Protein Conformation Generation." <i>The Thirteenth International Conference on Learning Representations (ICLR 2025)</i>.</span></li>
+<li><span id="lewis2024bioemu">Lewis, Sarah, et al. "Scalable emulation of protein equilibrium ensembles with generative deep learning." <i>bioRxiv (2024): 2024-12</i>.</span></li>
+<li><span id="fu2023cgmd">Fu, Xiang, et al. "Simulate time-integrated coarse-grained molecular dynamics with multi-scale graph networks." <i>Transactions on Machine Learning Research (2023)</i>.</span></li>
+<li><span id="schreiner2023ito">Schreiner, Mathias, et al. "Implicit transfer operator learning: multiple time-resolution surrogates for molecular dynamics." <i>Advances in Neural Information Processing Systems 36 (2023)</i>.</span></li>
+<li><span id="klein2023timewarp">Klein, Leon, et al. "Timewarp: Transferable acceleration of molecular dynamics by learning time-coarsened dynamics." <i>Advances in Neural Information Processing Systems 36 (2023)</i>.</span></li>
+<li><span id="jing2024mdgen">Jing, Bowen, et al. "Generative modeling of molecular dynamics trajectories." <i>Advances in Neural Information Processing Systems 37 (2024)</i>.</span></li>
+
+  
 <!-- <li><span id="sun2019infograph">Sun, F.-Y., Hoffmann, J., Verma, V., &amp; Tang, J. (2020). Infograph: Unsupervised and semi-supervised graph-level representation learning via mutual information maximization. <i>ICLR</i>.</span></li>
 <li><span id="xu2021end">Xu, M., Wang, W., Luo, S., Shi, C., Bengio, Y., Gomez-Bombarelli, R., &amp; Tang, J. (2021). An End-to-End Framework for Molecular Conformation Generation via Bilevel Programming. <i>ArXiv Preprint ArXiv:2105.07246</i>.</span></li>
 <li><span id="shi2021learning">Shi, C., Luo, S., Xu, M., &amp; Tang, J. (2021). Learning gradient fields for molecular conformation generation. <i>ArXiv Preprint ArXiv:2105.03902</i>.</span></li>
